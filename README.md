@@ -1,8 +1,6 @@
-# Spotiapp
+# Notas:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
-
-# Nota:
 
 Recordatorio que se deben de reconstruir los módulos de node con el comando
 
