@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col">
+        <!-- Capturamos la referencia local con #termino, en el buscar mandamos el argumento del termino.value-->
+        <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar Artista">
+    </div>
+</div>
+
+<app-loading class="m-5" *ngIf="loading"></app-loading>
+
+<!-- Desde el search.component mandamos mediante un input al tarjetas.component la info que queremos que renderize -->
+<!-- Las tarjetas apareceran si no se estan cargando -->
+<app-tarjetas *ngIf="!loading" [items]="artistas"></app-tarjetas>

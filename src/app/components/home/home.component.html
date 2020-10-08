@@ -1,0 +1,12 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<!-- Si sucede un error, aparecera este div -->
+<div *ngIf="error" class="alert alert-danger animated fadeIn">
+    <h3>Error</h3>
+    <p>
+        {{mensajeError}}
+    </p>
+</div>
+
+<!-- Desde el home.component mandamos mediante un input al tarjetas.component la info que queremos que renderize -->
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
